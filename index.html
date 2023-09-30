@@ -20,6 +20,15 @@
     </div>
     
     
+    <div class="intro">
+        <!-- <div>
+
+        </div> -->
+        <div id="three-container"></div>
+
+        
+        
+    </div>
     
     
     
@@ -37,12 +46,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
+
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
     <!-- ! Three js models -->
     <script src="./helpers/scripts/glove.js"></script>
+    
+    
+    <!-- ! logo model js -->
+    <script src="./helpers/scripts/logo.three.js"></script>
+    
 
+    <script>
+        THREE.ShapeUtils.triangulateShape = (function() {
+        var pnlTriangulator = new PNLTRI.Triangulator();
+        return function triangulateShape(contour, holes) {
+            return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+            };
+        })();
+    </script>
 
 
 </body>

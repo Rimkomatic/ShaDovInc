@@ -1,3 +1,4 @@
+
 var scene = new THREE.Scene();
 document.addEventListener("mousemove", onMouseMove, false);
 var camera = new THREE.PerspectiveCamera(
@@ -13,7 +14,7 @@ const hero = document.getElementById('hero')
 
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-
+renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
 document.addEventListener("resize" ,(e)=>{
   renderer.setSize(window.innerWidth, window.innerHeight)
 })
