@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+@font-face {
+    font-family: 'logofont'; /* This is the name you'll use to reference the font */
+    src: url('../fonts/Asember_Ligature.ttf') format('truetype'); /* Path to your TTF font file */
+    /* You can include more font formats like WOFF and WOFF2 for better browser compatibility */
+}
+@font-face {
+    font-family: 'Vagabond-bold'; /* This is the name you'll use to reference the font */
+    src: url('../fonts/Vagabond-Bold.ttf') format('truetype'); /* Path to your TTF font file */
+    /* You can include more font formats like WOFF and WOFF2 for better browser compatibility */
+}
+@font-face {
+    font-family: 'Vagabond-Extrabold'; /* This is the name you'll use to reference the font */
+    src: url('../fonts/Vagabond-ExtraBold.ttf') format('truetype'); /* Path to your TTF font file */
+    /* You can include more font formats like WOFF and WOFF2 for better browser compatibility */
+}
+@font-face {
+    font-family: 'Vagabong-outline'; /* This is the name you'll use to reference the font */
+    src: url('../fonts/Vagabond-Outline.ttf') format('truetype'); /* Path to your TTF font file */
+    /* You can include more font formats like WOFF and WOFF2 for better browser compatibility */
+}
+
+/*👉*{
+  outline: greenyellow 2px solid;
+}👈*/
+  
+
+body {
+  height: 400vh;
+  width: 100vw;
+  background-color: #000;
+  overflow-x: hidden;
+  color: #fff;
+  z-index: -2;
+  scrollbar-width: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+  
+  /* Style the scrollbar thumb */
+*::-webkit-scrollbar-thumb {
+  background-color: #00000000;
+}
+  
+  /* Optional: Style the scrollbar track when hovered */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.hero-logo{
+    font-family: 'logofont', sans-serif;
+    margin: 3rem;
+    z-index: 5 !important;
+    color: #fff;
+    position: relative;
+}
+
+.hero-section>canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* z-index: 0; */
+}
+
+.hero-section-text-contaiiner{
+  position: relative;
+  z-index: 2 !important;
+  top: 60vh;
+  left: 5vw;
+  width: min-content;
+}
+
+.hero-section-text-contaiiner>h2{
+  font-family: 'Vagabond-bold', sans-serif;
+  font-size: 300%;
+  
+}
