@@ -98,35 +98,34 @@ body {
 
 /* ! INTRO ------------------------------------*/
 
+
+
+
 .intro{
-  width: 100vw;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-
-  /* background-color: #555; */
-
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
   margin-top: 40vh;
 }
 
-.intro>div{
-  width: 100vw;
-  height: 100vh;
-  padding: 1rem;
-  outline: greenyellow 1px solid;
-  /* background-color: aqua; */
+#logo{
+  width:80vw !important;
+}
+.hq{
+  width:30vw
+}
+.reveal-txt{
+  position:absolute;
+  left:3rem;
+  width:40vw;
+  transform:translatey(80%);
+  font-family: 'Vagabond-bold', sans-serif;
+  outline:  #fff 2px solid;
+
 }
 
-#instructions {
-  position: absolute;
-  color: #666;
-  bottom: 0;
-  padding-bottom: 6px;
-  font-family: sans-serif;
-  width: 100%;
-  text-align: center;
-  pointer-events: none;
+#logo{
+  font-family: 'Vagabond-bold', sans-serif;
+  
 }
