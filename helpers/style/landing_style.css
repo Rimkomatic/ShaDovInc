@@ -122,7 +122,7 @@ body {
   max-width: 800px;
   transform:translatey(80%);
   font-family: 'Vagabond-bold', sans-serif;
-  outline:  #fff 2px solid;
+  /* outline:  #fff 2px solid; */
 
 }
 
