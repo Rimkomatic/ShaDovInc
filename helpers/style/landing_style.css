@@ -118,7 +118,8 @@ body {
 .reveal-txt{
   position:absolute;
   left:3rem;
-  width:40vw;
+  width:90vw;
+  max-width: 800px;
   transform:translatey(80%);
   font-family: 'Vagabond-bold', sans-serif;
   outline:  #fff 2px solid;
