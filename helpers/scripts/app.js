@@ -8,7 +8,7 @@ gsap.from('#logo',{
     scrollTrigger:{
       trigger:'#logo',
       scrub:true,
-      markers:true,
+    //   markers:true,
       start: "top center" ,
       end:"top end"
     }
@@ -21,7 +21,7 @@ gsap.fromTo('.text-eff',{opacity:0.1},{
     scrollTrigger:{
       trigger:'.reveal-txt',
       scrub:true,
-      markers:true,
+    //   markers:true,
       start:'top bottom -20%',
       end:'top center'
     }
