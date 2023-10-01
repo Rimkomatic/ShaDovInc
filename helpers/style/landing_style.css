@@ -25,19 +25,23 @@
     /* You can include more font formats like WOFF and WOFF2 for better browser compatibility */
 }
 
-/*👉*{
+*{
   outline: greenyellow 2px solid;
-}👈*/
+}
   
 
 body {
   height: 400vh;
   width: 100vw;
   background-color: #000;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: #fff;
   z-index: -2;
   scrollbar-width: none !important;
+}
+
+html{
+  overflow-x: hidden;
 }
 
 *::-webkit-scrollbar {
