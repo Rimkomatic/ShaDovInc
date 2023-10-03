@@ -49,8 +49,8 @@ function init () {
   const stars = document.getElementById('stars')
   stars.appendChild(renderer2.domElement)
 
-  stars.style.touchAction = 'none'
-  stars.addEventListener('pointermove', onPointerMove)
+  // stars.style.touchAction = 'none'
+  // stars.addEventListener('pointermove', onPointerMove)
   window.addEventListener('resize', onWindowResize)
 }
 
@@ -63,10 +63,7 @@ function onWindowResize () {
   renderer2.setSize(window.innerWidth, 1.5 * window.innerHeight)
 }
 
-function onPointerMove (event) {
-  mouseX2 = event.clientX - windowHalfX 
-  mouseY2 = event.clientY - windowHalfY
-}
+
 
 function animate2 () {
   requestAnimationFrame(animate2)
