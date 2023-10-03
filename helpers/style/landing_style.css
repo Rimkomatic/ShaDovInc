@@ -123,7 +123,7 @@ width:30vw
 .reveal-txt{
 position:absolute;
 left:3rem;
-padding-left: 3rem;
+/* padding-left: 3rem; */
 width:90vw;
 max-width: 800px;
 transform:translatey(80%);

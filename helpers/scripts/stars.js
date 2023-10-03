@@ -74,8 +74,8 @@ function animate2 () {
 }
 
 function render () {
-  camera2.position.x += (mouseX2 * 2 - camera2.position.x) * 0.02
-  camera2.position.y += (-mouseY2 * 2 - camera2.position.y) * 0.02
+  // camera2.position.x += (mouseX2 * 2 - camera2.position.x) * 0.02
+  // camera2.position.y += (-mouseY2 * 2 - camera2.position.y) * 0.02
   camera2.lookAt(scene2.position)
   renderer2.render(scene2, camera2)
   scene2.rotation.x += 0.001
