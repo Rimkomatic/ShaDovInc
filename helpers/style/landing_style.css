@@ -200,16 +200,17 @@ padding-top: 50vh;
 }
 
 .form>div>h1{
-	font-size: 4rem;
+	font-size: 1.7rem;
 	position: relative;
 	overflow: hidden;
-	height: 5rem;
+	height: 2rem;
 	margin: 0;
+  width: 100vw;
   color: #fff;
 }
 
 .text{
-  padding: 100px;
+  /* padding: 100px; */
   width: 100vw;
   height: 60vh;
 }
@@ -217,7 +218,7 @@ padding-top: 50vh;
 .hidden-text{
   position: absolute;
   /* font-size: 5rem; */
-  padding-left: 3rem;
+  padding-left: 1rem;
 	z-index: 200;
 }
 
