@@ -200,13 +200,20 @@ padding-top: 50vh;
 }
 
 .form>div>h1{
-	font-size: 1.7rem;
+	font-size: 3.5rem;
 	position: relative;
 	overflow: hidden;
-	height: 2rem;
+	height: 4.5rem;
 	margin: 0;
   width: 100vw;
   color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .form>div>h1{
+    font-size: 1.7rem;
+    height: 2rem;
+  }
 }
 
 .text{
@@ -224,12 +231,68 @@ padding-top: 50vh;
 
 .form-holder{
   position: static;
-  background-color: red;
+  /* background-color: red; */
   width: 80%;
   height: 40%;
+}
+
+.form-holder>h2{
+  margin-top: 2rem;
+  font-size: 4rem;
+  text-align: left;
+  transform: translateX(-1%);
 }
 
 body>*{
   scroll-behavior: smooth;
   overflow: hidden;
+}
+
+form{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form>*{
+  margin: 0;
+  /* align-items:baseline; */
+  margin: 1.5rem;
+}
+
+#email{
+  outline: none;
+  user-select: none;
+  
+  border: none;
+
+  border: 2px solid white;
+  border-radius: 6px;
+  width: 30vw;
+  background: transparent;
+  min-width: 300px;
+  color:white;
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  height: 3rem;
+}
+
+#Join{
+  width: 10vw;
+  outline:  none;
+  height: 3rem;
+  font-size: 2rem;
+  color: #000;
+  font-family: 'Vagabond-bold', sans-serif;
+  letter-spacing: 110%;
+  user-select: none;
+  
+}
+
+@media only screen and (max-width: 700px) {
+  #email{
+    height: 1.5rem;
+  }
 }
