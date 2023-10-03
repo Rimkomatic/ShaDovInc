@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'logofont'; /* This is the name you'll use to reference the font */
-  src: url('../fonts/Asember_Ligature.ttf') format('truetype'); /* Path to your TTF font file */
+  src: url('../fonts/masyteregular-lgmb0.ttf') format('truetype'); /* Path to your TTF font file */
   /* You can include more font formats like WOFF and WOFF2 for better browser compatibility */
 }
 @font-face {
@@ -73,6 +73,7 @@ height: 100vh;
   z-index: 5 !important;
   color: #fff;
   position: relative;
+  font-size: 2.5rem;
 }
 
 .hero-section>canvas{
@@ -133,8 +134,7 @@ font-family: 'Vagabond-bold', sans-serif;
 }
 
 #logo{
-font-family: 'Vagabond-bold', sans-serif;
-
+  font-family: 'Vagabond-bold', sans-serif;
 }
 
 @media only screen and (max-width: 700px) {
@@ -184,4 +184,51 @@ padding-top: 50vh;
   /* padding-bottom: 30vh; */
   box-shadow: 0px -43px 99px -10px #0078ff80;
   /* transform: translateY(-10%); */
+}
+
+.form{
+  width: 100vw;
+  height: 60vh;
+  /* background-color: red; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Vagabond-bold', sans-serif;
+
+}
+
+.form>div>h1{
+	font-size: 4rem;
+	position: relative;
+	overflow: hidden;
+	height: 5rem;
+	margin: 0;
+  color: #fff;
+}
+
+.text{
+  padding: 100px;
+  width: 100vw;
+  height: 60vh;
+}
+
+.hidden-text{
+  position: absolute;
+  /* font-size: 5rem; */
+  padding-left: 3rem;
+	z-index: 200;
+}
+
+.form-holder{
+  position: static;
+  background-color: red;
+  width: 80%;
+  height: 40%;
+}
+
+body>*{
+  scroll-behavior: smooth;
+  overflow: hidden;
 }

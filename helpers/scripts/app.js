@@ -26,3 +26,19 @@ gsap.fromTo('.text-eff',{opacity:0.1},{
       end:'top 70%'
     }
 })
+
+const tl = gsap.timeline({});
+gsap.from(
+  ".hidden-text",1.5,{ 
+    y: "100%", 
+    ease: "power4.out",
+    stagger: 0.15,
+    scrollTrigger:{
+      trigger:'.form-holder',
+      scrub:true,
+      markers:true,
+      start:'top 70%',
+      end:'top 50%'
+    }
+  }
+);
