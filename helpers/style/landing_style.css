@@ -281,6 +281,7 @@ form>*{
 
 #Join{
   width: 10vw;
+  min-width: 200px;
   outline:  none;
   height: 3rem;
   font-size: 2rem;
