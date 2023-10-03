@@ -50,7 +50,7 @@ function init () {
   stars.appendChild(renderer2.domElement)
 
   // stars.style.touchAction = 'none'
-  // stars.addEventListener('pointermove', onPointerMove)
+  stars.addEventListener('pointermove', onPointerMove)
   window.addEventListener('resize', onWindowResize)
 }
 
@@ -63,7 +63,10 @@ function onWindowResize () {
   renderer2.setSize(window.innerWidth, 1.5 * window.innerHeight)
 }
 
-
+function onPointerMove (event) {
+  mouseX2 = event.clientX - windowHalfX 
+  mouseY2 = event.clientY - windowHalfY
+}
 
 function animate2 () {
   requestAnimationFrame(animate2)
@@ -71,8 +74,8 @@ function animate2 () {
 }
 
 function render () {
-  // camera2.position.x += (mouseX2 * 2 - camera2.position.x) * 0.02
-  // camera2.position.y += (-mouseY2 * 2 - camera2.position.y) * 0.02
+  camera2.position.x += (mouseX2 * 2 - camera2.position.x) * 0.02
+  camera2.position.y += (-mouseY2 * 2 - camera2.position.y) * 0.02
   camera2.lookAt(scene2.position)
   renderer2.render(scene2, camera2)
   scene2.rotation.x += 0.001
