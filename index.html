@@ -59,9 +59,11 @@
             
             
             <div class="form-holder">
-                <form id="waitlist-form" class="show">
-                    <input type="email" id="email" autocomplete="off" placeholder="Enter your email" required>
-                    <button type="submit" id="Join">Join Waitlist</button>
+                <!-- -->
+                <form id="waitlist-form" action="http://localhost:8000/add"   method="POST" class="show">
+                    <input type="email" id="email" autocomplete="off" name="email" placeholder="Enter your email" required>
+                    <button type="submit" id="Join" type="submit">Join Waitlist</button>
+
                 </form>
 
                 <h2 class="hero-logo show" >ShaDov</h2>

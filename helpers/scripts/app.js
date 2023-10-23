@@ -37,8 +37,8 @@ gsap.from(
       trigger:'.form-holder',
       scrub:true,
       // markers:true,
-      start:'top 70%',
-      end:'top 50%'
+      start:'top 65%',
+      end:'top 40%'
     }
   }
 );
@@ -52,10 +52,24 @@ gsap.fromTo(
     stagger: 0.15,
     scrollTrigger:{
       trigger:'.form-holder',
-      scrub:true,
-      // markers:true,
-      start:'top 70%',
-      end:'top 50%'
+      scrub:2,
+      markers:true,
+      
+      start:'top 65%',
+      end:'top 40%'
     }
   }
 );
+
+
+// !-----------------------------------------
+
+
+// import { writeFile } from 'fs';
+// let fInput = "You are reading the content from Tutorials Point"
+// writeFile('./emails.txt', fInput, (err) => {
+//    if (err) throw err;
+//    else{
+//       console.log("The file is updated with the given data")
+//    }
+// })
