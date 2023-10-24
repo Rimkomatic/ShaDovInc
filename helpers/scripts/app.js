@@ -21,7 +21,7 @@ gsap.fromTo('.text-eff',{opacity:0.01},{
     scrollTrigger:{
       trigger:'.reveal-txt',
       scrub:true,
-      markers:true,
+      // markers:true,
       start:'top 70%',
       end:'top 55%'
     }
