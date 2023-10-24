@@ -158,16 +158,16 @@ position: absolute;
 width:100vw;
 height:100vh;
 
-padding-top: 50vh;
+/* padding-top: 50vh; */
 }
 
 
 .planet-container{
-  width: fit-content;
+  width: 100vw;
   height: 50vw;
   overflow: hidden;
   /* background-color: red; */
-  transform: translateY(-10%);
+  transform: translateY(-20%);
 }
 
 
@@ -176,14 +176,14 @@ padding-top: 50vh;
   aspect-ratio: 1;
   /* height: 100vh; */
   border-radius: 50%;
-  background-color: #000;
+  /* background-color: #00f; */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
   /* padding-bottom: 30vh; */
   box-shadow: 0px -43px 99px -10px #0078ff80;
-  /* transform: translateY(-10%); */
+  transform: translateY(10%);
 }
 
 .form{
@@ -294,8 +294,18 @@ form>*{
   
 }
 
+.bottom-logo{
+  margin-left: 1.5rem ;
+}
+
 @media only screen and (max-width: 700px) {
   #email{
     height: 1.5rem;
+  }
+  .hidden-text{
+    position: absolute;
+    font-size: 1.7rem;
+    padding-left: 1.5rem;
+    z-index: 200;
   }
 }

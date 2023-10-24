@@ -14,16 +14,16 @@ gsap.from('#logo',{
     }
 })
   
-gsap.fromTo('.text-eff',{opacity:0.1},{
+gsap.fromTo('.text-eff',{opacity:0.01},{
     opacity:1,
     stagger:1.5,
     duration:2,
     scrollTrigger:{
       trigger:'.reveal-txt',
       scrub:true,
-      // markers:true,
-      start:'top 80%',
-      end:'top 70%'
+      markers:true,
+      start:'top 70%',
+      end:'top 55%'
     }
 })
 
@@ -53,7 +53,7 @@ gsap.fromTo(
     scrollTrigger:{
       trigger:'.form-holder',
       scrub:2,
-      markers:true,
+      // markers:true,
       
       start:'top 65%',
       end:'top 40%'
